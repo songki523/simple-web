@@ -1,0 +1,19 @@
+{
+  "name": "commuter_app",
+  "version": "1.0.0",
+  "description": "Commuter Status Tracking App",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "songki1@gl.umbc.edu:swe2018/Commuter_App"
+  },
+  "keywords": [
+    "Commuter",
+    "App"
+  ],
+  "author": "Keith Song",
+  "license": "ISC"
+}
