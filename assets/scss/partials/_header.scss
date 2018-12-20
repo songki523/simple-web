@@ -1,3 +1,54 @@
 .header {
     background-color: $peach;
+    padding: 0%;
+    nav {
+        ul{
+            .branding{
+                display: block;
+                padding: 1em;
+            }
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            list-style: none;
+            margin: 0;
+            a {
+                text-decoration: none;
+                display: block;
+                padding: 1em;
+                color: whitesmoke;
+                &:hover {
+                    background: darken($color: $peach, $amount: 2%)
+                }
+            }
+        }
+        li{
+            display: inline-block;
+        }
+    }
+    @media all and (max-width: $large) {
+        .header-nav {
+            justify-content: space-around;
+        }
+    }
+
+    @media all and (max-width: $medium) {
+        .header-nav ul {
+            display: flex;
+            flex-flow: column wrap;
+            padding: 0;
+            a{
+                text-align: center;
+                padding: 10px;
+                border-top: 1px solid rgba(255,255,255,0.3);
+                border-bottom: 1px solid rgba(0,0,0,0.1)
+            }
+            li:last-of-type a {
+                border-bottom: none;
+            }
+        }
+    }
 }
+
+
+

@@ -16,10 +16,12 @@ body {
     flex: 1 100%;
 }
 
+// Viewport size handler
 @media all and (min-width: $medium) {
     .aside {flex: 1 0 0;}
 }
 
+// Viewport size handler
 @media all and (min-width: $large) {
     .main       {flex: 3 0px; }
     .aside-1    {order: 1; }
