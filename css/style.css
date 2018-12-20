@@ -1,5 +1,80 @@
-h1 {
-  color: #F8B195;
+@import url("https://fonts.googleapis.com/css?family=Cute+Font|Roboto");
+body {
+  font-family: "Cute Font", cursive;
+  font-size: x-large;
+  padding: 2em;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+
+  .aside-1 {
+    order: 1;
+  }
+
+  .main {
+    order: 2;
+  }
+
+  .aside-2 {
+    order: 3;
+  }
+
+  .footer {
+    order: 4;
+  }
+}
+.aside-1 {
+  background: #F67280;
+}
+
+.aside-2 {
+  background: #C06C84;
+}
+
+.footer {
+  background-color: #355C7D;
+}
+
+.header {
+  background-color: #F8B195;
+}
+
+.main {
+  text-align: left;
+  background: #6C5B7B;
+}
+
+nav ul {
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  padding: 0 10px;
+}
+nav a:hover {
+  color: #355C7D;
 }
 
 /*# sourceMappingURL=style.css.map */
