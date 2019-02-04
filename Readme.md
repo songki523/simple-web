@@ -1,8 +1,11 @@
 # Simple App Read Me
 ## Sass Hot reloading command script
 - sass --watch ./assets/scss/style.scss ./css/style.css
-## git push to origin with upstream flag 
-- git push -u (branch name)
+## git 
+### list of remote branches 
+- git remote -v
+### push to origin with upstream flag 
+- git push -u (remote-name) (branch name)
 ## Font Awesome for Icons
 - https://fontawesome.com/
 ## Google Fonts for Fonts
