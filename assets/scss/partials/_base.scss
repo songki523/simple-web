@@ -16,6 +16,11 @@ body {
     flex: 1 100%;
 }
 
+// Remove padding if screen is small
+@media all and (max-width: $medium) {
+    body {padding: 0em; }
+}
+
 // Viewport size handler
 @media all and (min-width: $medium) {
     .aside {flex: 1 0 0;}

@@ -17,6 +17,11 @@ body {
   flex: 1 100%;
 }
 
+@media all and (max-width: 600px) {
+  body {
+    padding: 0em;
+  }
+}
 @media all and (min-width: 600px) {
   .aside {
     flex: 1 0 0;

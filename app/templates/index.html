@@ -1,6 +1,7 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <link rel="stylesheet" type="text/css" href="static/style.css" />
         <title>Commuter App</title>
     </head>
 
@@ -11,8 +12,8 @@
                 <nav class="header-nav">
                     <ul>
                         <li><span class="branding">branding</span></li>
-                        <li><a href="#">Ledger App</a></li>
-                        <li><a href="#">Commuter App</a></li>
+                        <li><a id="ledger-app">Ledger App</a></li>
+                        <li><a id="commuter-app">Commuter App</a></li>
                         <li><a target="_blank" href="https://www.wmata.com/js/nexttrain/nexttrain.html#A02|Farragut%20North">Metro</a></li>
                         <li><a target="_blank" href="http://www.marctracker.com/PublicView/status.jsp">Marc</a></li>
                     </ul>
@@ -20,7 +21,7 @@
             </header>
 
             <!-- Article -->
-            <article class="main">
+            <article class="main" id="main">
                 <p>Welcome Screen</p>
                 <p>                    
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eos corrupti consectetur at, reiciendis 
@@ -39,6 +40,6 @@
             </footer>
         </div>
     </body>
-
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/script.js"></script>
 </html>
