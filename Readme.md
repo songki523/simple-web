@@ -6,16 +6,17 @@
 - git remote -v
 ### push to origin with upstream flag 
 - git push -u (remote-name) (branch name)
-## Font Awesome for Icons
+## Flask
+### Running Application
+- export FLASK_APP = app
+- export FLASK_ENV = development
+- python -m flask run
+## Resources
+### Font Awesome for Icons
 - https://fontawesome.com/
-## Google Fonts for Fonts
+### Google Fonts for Fonts
 - https://fonts.google.com/ 
-## SASS Frame works 
+### SASS Frame works 
 - Bourbon
 - Susy
 - Compass
-## Flask
-Running Application
-export FLASK_APP = app
-export FLASK_ENV = development
-python -m flask run

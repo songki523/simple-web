@@ -1,0 +1,41 @@
+#main{
+    text-align: left;
+    background: $purple;
+
+    .item-current-month {
+        grid-area: currentMonth;
+    }
+    .item-total-expense {
+        grid-area: totalExpense;
+        background-color: $altcolor;
+    }
+    .item-current-date {
+        grid-area: currentDate;
+    }
+    .item-date {
+        grid-area: date;
+        background-color: $altcolor;
+    }
+    .item-name {
+        grid-area: item;
+    }
+    .item-category {
+        grid-area: category;
+        background-color: $altcolor;
+    }
+    .item-balance {
+        grid-area: balances;
+    }
+    .item-payment-type {
+        grid-area: payment-type;
+        background-color: $altcolor;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-areas: 
+            "currentMonth currentMonth totalExpense . currentDate"            
+            "date item category balances payment-type";
+    }
+}

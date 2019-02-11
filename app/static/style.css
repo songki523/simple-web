@@ -1,53 +1,42 @@
 @import url("https://fonts.googleapis.com/css?family=Cute+Font|Roboto");
-body {
-  font-family: "Cute Font", cursive;
-  font-size: x-large;
-  padding: 2em;
+#main {
+  text-align: left;
+  background: #6C5B7B;
+}
+#main .item-current-month {
+  grid-area: currentMonth;
+}
+#main .item-total-expense {
+  grid-area: totalExpense;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#main .item-current-date {
+  grid-area: currentDate;
+}
+#main .item-date {
+  grid-area: date;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#main .item-name {
+  grid-area: item;
+}
+#main .item-category {
+  grid-area: category;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#main .item-balance {
+  grid-area: balances;
+}
+#main .item-payment-type {
+  grid-area: payment-type;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#main .container {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-areas: "currentMonth currentMonth totalExpense . currentDate" "date item category balances payment-type";
 }
 
-.wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  font-weight: bold;
-  text-align: center;
-}
-
-.wrapper > * {
-  padding: 10px;
-  flex: 1 100%;
-}
-
-@media all and (max-width: 600px) {
-  body {
-    padding: 0em;
-  }
-}
-@media all and (min-width: 600px) {
-  .aside {
-    flex: 1 0 0;
-  }
-}
-@media all and (min-width: 800px) {
-  .main {
-    flex: 3 0px;
-  }
-
-  .aside-1 {
-    order: 1;
-  }
-
-  .main {
-    order: 2;
-  }
-
-  .aside-2 {
-    order: 3;
-  }
-
-  .footer {
-    order: 4;
-  }
-}
 .aside-1 {
   background: #F67280;
 }
@@ -109,9 +98,54 @@ body {
   }
 }
 
-.main {
-  text-align: left;
-  background: #6C5B7B;
+body {
+  font-family: "Cute Font", cursive;
+  font-size: x-large;
+  padding: 2em;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+@media all and (max-width: 600px) {
+  body {
+    padding: 0em;
+  }
+}
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+
+  .aside-1 {
+    order: 1;
+  }
+
+  .main {
+    order: 2;
+  }
+
+  .aside-2 {
+    order: 3;
+  }
+
+  .footer {
+    order: 4;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
